@@ -3,6 +3,7 @@
 package curso.java;
 
 import curso.java.carro.Carro;
+import curso.java.carro.Carro2;
 
 import java.util.*;
 
@@ -54,5 +55,20 @@ public class Main {
         System.out.println("Queue: " + queue.remove());
         System.out.println("Queue: " + queue);
 
+
+        Carro2 sandero = new Carro2("Sandero", "Prata", 2020, "ABC-1234");
+        System.out.println(sandero.modelo());
+        System.out.println(sandero.cor());
+        System.out.println(sandero.ano());
+        System.out.println(sandero.placa());
+
+
+        String kalli = list
+                .stream()
+                .filter(nome -> nome.startsWith("Kalli"))
+                .map(String::toUpperCase)
+                .reduce("", (nome1, nome2) -> nome1 + " " + nome2)
+//                .toString();
+        System.out.println("Kalli:" + kalli);
     }
 }

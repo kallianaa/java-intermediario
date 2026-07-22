@@ -32,4 +32,53 @@ public class Carro implements Pintavel {
         System.out.println("Freando o carro");
     }
 
+    @Override
+    public String apliarTinta() {
+        return "";
+    }
+
+    @Override
+    public void aplicarTinta(String tinta) {
+
+    }
+
+    @Override
+    public String getCor() {
+        return "";
+    }
+
+    @Override
+    public void setCor(String cor) {
+
+    }
+
+    @Override
+    public String getTipo() {
+        return "";
+    }
+
+    @Override
+    public void setTipo(String tipo) {
+
+    }
+
+    @Override
+    public String getMarca() {
+        return "";
+    }
+
+    @Override
+    public void setMarca(String marca) {
+
+    }
+
+    @Override
+    public String getPreco() {
+        return "";
+    }
+
+    @Override
+    public void setPreco(String preco) {
+
+    }
 }
